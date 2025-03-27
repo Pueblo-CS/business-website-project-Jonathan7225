@@ -4,6 +4,9 @@ body {
     background-position: center;
     background-attachment: fixed;
     background-size: cover;
+    margin:0px;
+    font-size: 22px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 a{
     text-decoration: none;
@@ -19,6 +22,26 @@ a:hover{
 #header{
     background-color: #0A0700;
     height: 60px;
+    padding: 20px;
+    padding-top:40px;
+}
+
+.logo{
+    float:left;
+}
+
+.nav{
+    float:right;
+}
+
+.nav > a {
+    text-decoration: none;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.nav > a:hover {
+    border-bottom: 2px solid;
 }
 
 .nav > a {
@@ -27,6 +50,8 @@ a:hover{
 
 #hero{
     font-size: 22px;
+    margin: 10% auto 10% auto;
+    width:fit-content;
 }
 
 #hero > h1{
@@ -35,6 +60,8 @@ a:hover{
 
 #cta{
     background-color:#e40d0a;
+    color:white;
+    float:right;
 }
 
 #cta:hover{
@@ -42,11 +69,51 @@ a:hover{
     background-color: white;
 }
 
+.button {
+    display: block;
+    width: fit-content;
+    padding: 10px 20px 10px 20px;
+    border-radius: 8px;
+    border-width: 2px;
+    border-style:solid;
+}
+
 #services{
     background-color:aliceblue;
+    padding: 20vh 40px 20vh 40px;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
 }
 
 .card{
     background-color: white;
-    width: fit-content;
+    width: 20%;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 20px 10px 20px;
+    font-size:20px;
+    box-shadow: 5px 5px 20px #2c0403  ;
+}
+
+#testimonials {
+    padding: 20vh 40px 20vh 40px;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.quote::before, .quote::after {
+    content: "\"";
+    font-weight: bolder;
+    font-size:30px;
+}
+
+.attribution{
+    font-weight: bolder;
+}
+
+.attribution::before {
+    content: "-"
 }
